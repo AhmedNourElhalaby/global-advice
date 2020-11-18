@@ -1,0 +1,100 @@
+
+
+<div class="com">
+    <div class="container">
+        <mat-card>
+
+            <p>
+                عميلنا العزيز
+            الرجاء العلم بما يلي
+            </p>
+                <ul>
+                    <li>
+                        اولا: عند التعرض لاي حادث يتم عمل محضر في مكان وقوع الحادث او في اقرب مكان ثم يتم التواصل مع الاستاذه مارى اسعد عن طريق الميل الاتى 
+                        Mary.assad@globaladvice-gaib.com
+                        او عن طريق الرقم الاتى 01022111272
+                       </li>
+                    <li>ثانيا: أن جميع الرسائل البريدية المعتمدة من الشركة هي الصادرة من موقعنا
+                    </li>
+                    
+                    <li>ثالثا: سنبذل قصارنا جهدنا لخدمتكم و حل الشكاوى و لكم الحق في أي وقت التقدم للهيئة العامة للرقابة المالية بالشكوى في حال عدم التوصل لحل للشكوى يرضيكم
+                    </li>
+                    </ul>
+            
+            
+            <h2>
+            
+            بيان تفصيلي بكيفية حل شكاوى العملاء
+            </h2>
+            
+            <ol>
+            <li>التقدم بالشكوى يتم عن طريق زيارة مكتب الشركة أو بالتليفون أو بكتابة الشكوى على موقعنا الالكتروني
+            </li>
+            <li>.يتم تسجيل الشكوى في سجل الشكاوى بالشركة و يتضمن محتوى الشكوى أسم العميل و رقم الوثيقة
+            وبياناتها و وقت التقدم بالشكوى واسم مقدم الشكوى
+            </li>
+            <li>في خلال ٤٨ ساعة عمل سيقوم أحد المختصين بالشركة بالاتصال بحضراتكم و حل الشكوى
+            </li>
+            <li>في حال عدم رضاكم يتم تصعيد الشكوى لرئيس الشركة في خلال ٤٨ ساعة عمل للحل
+            </li>
+            <li>في حال عدم رضاكم يتم إخطاركم كتابيا برد شركة الوساطة النهائي و من ثم يحق لكم التقدم للهيئة العامة للرقابة المالية بالشكوى</li>
+            </ol>
+            <div style="padding-top: 30px;" class="ui-grid ui-grid-responsive">
+                <div class="ui-grid-col-12"><a target="_blank" href="http://207.154.195.214/دليل حماية المتعاملين في التأمين.pdf" style="text-decoration: underline; cursor: pointer; margin-bottom: 60px;">دليل حماية المتعاملين فى التأمين</a></div>
+                <div class="ui-grid-col-12"><a target="_blank" href="http://207.154.195.214/دليل حماية المتعاملين في التأمين.pdf"><img style="width:50%;" src="assets/images/163.jpg"/></a></div>
+            </div>
+        
+        <form fxLayout="column" fxLayoutGap="10px" #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+
+            <mat-form-field>
+                <mat-label>
+                    {{'com.name' | translate }}
+                </mat-label>
+                <input type="text" matInput ngModel name="contact_name" #contact_name="ngModel" required/>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>
+                    {{'com.email' | translate }}
+                </mat-label>
+                <input type="email" matInput #email_from="ngModel" ngModel name="email_from" email />
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>
+                    {{'com.phone' | translate }}
+                </mat-label>
+                <input type="text" matInput  #mobile="ngModel" ngModel name="mobile" required/>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>
+                    {{'com.town' | translate }}
+                </mat-label>
+                <input type="text" matInput #address="ngModel" ngModel name="address"/>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>
+                    {{'com.num_of_doc' | translate }}
+                </mat-label>
+                <input type="text" matInput  #policy_no="ngModel" ngModel name="policy_no"/>
+            </mat-form-field>
+
+
+            <mat-form-field>
+                <mat-label>
+                    {{'com.details_request' | translate }}
+                </mat-label>
+                <input type="text" matInput #description="ngModel" ngModel name="description"/>
+            </mat-form-field>
+
+
+            <button mat-raised-button type="submit" [disabled]="f.invalid"> {{'com.send' | translate }}</button>
+
+
+        </form>
+    </mat-card>        
+    </div>
+</div>

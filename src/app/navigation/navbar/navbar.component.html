@@ -1,0 +1,31 @@
+<nav  lt-md>
+    <mat-toolbar>
+        <div class="nav-links">
+            <a mat-button routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+                true}">
+                الصفحة الرئيسية
+            </a>
+            <a mat-button routerLink="/aboutus" routerLinkActive="active-link">
+                {{'home.aboutus' | translate}}
+            </a>
+
+            <a mat-button routerLink="/how-we-work" routerLinkActive="active-link">
+                {{'home.how-work' | translate}}
+            </a>
+
+            <a mat-button routerLink="/complaints" routerLinkActive="active-link">
+                {{'home.complaints' | translate}}
+            </a>
+
+            <a mat-button routerLink="/jobs" routerLinkActive="active-link">
+                {{'home.jobs' | translate}}
+            </a>
+
+            <a mat-button routerLink="/contactus" routerLinkActive="active-link">
+                {{'home.contactus' | translate}}
+            </a>
+        </div>
+    </mat-toolbar>
+
+    <!-- <span class="seprator"></span> -->
+</nav>
